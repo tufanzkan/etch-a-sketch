@@ -2,33 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch a Sketch</title>
-    <link rel="stylesheet" href="stil.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="sketch">
-        <div class="logo">
-            <img id="lg" src="logo.png" alt="logo">
+
+    <div class="sketch">
+        <div class="toolbar"><img src="logo.png" alt="logo">
+            <input type="color" id="colorpicker" value="#000000">
+            <button id="rainbow">Rainbow Mode</button>
+            <button id="eraser">Eraser</button>
+            <button id="reset">Clear All</button>
+            <p><span id="demo"></span></p>
+            <input type="range" min="1" max="40" value="16" class="slider" id="myRange" onchange="resize(this.value)">
+
         </div>
 
-        <div class="back_cont">
-            <div class="container"></div>
-        </div>
-
-        <div class="tools">
-            <div class="colselc"><input type="color" id="colorpicker" value="#000000"></div>
-            <button class="selc" id="rainbow">Rainbow Mode</button>
-            <button class="selc" id="eraser">Eraser</button>
-            <button class="selc" id="reset">Clear All</button>
-            <div class="indent">
-                <p><span id="size">16x16</span></p>
-                <input type="range" min="1" max="45" value="16" class="slider" id="myRange" onchange="resize(this.value)">
-            </div>
+        <div id="container-back">
+            <div id="container"></div>
         </div>
     </div>
 
     <script src="jvscrpt.js"></script>
+    
 </body>
 </html>
+<html>
