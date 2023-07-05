@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch a Sketch</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stil.css">
 </head>
 <body>
 
     <div class="sketch">
-        <div class="toolbar"><img src="logo.png" alt="logo">
+        <div class="toolbar">
+            <img src="logo.png" alt="logo">
             <input type="color" id="colorpicker" value="#000000">
             <button id="rainbow">Rainbow Mode</button>
             <button id="eraser">Eraser</button>
             <button id="reset">Clear All</button>
             <p><span id="demo"></span></p>
             <input type="range" min="1" max="40" value="16" class="slider" id="myRange" onchange="resize(this.value)">
-
         </div>
 
         <div id="container-back">

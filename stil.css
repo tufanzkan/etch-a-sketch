@@ -1,80 +1,56 @@
 body{
-    background-color: #78CCCB;
-    display: flex;
-    flex-direction: column;
+    background-color: blanchedalmond;
+    margin: 0px;
 }
-#sketch{
+.sketch{
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
+    flex-direction: row;
+    margin-top: 36px;
     justify-content: center;
-    width: 90%;
-    margin-top: 10px;
-    margin-left: 70px;
-    height: auto;
-    background-color: #FF5E5B;
-    border-radius: 12px;
+    gap: 20px;
 }
-#lg{
-    width: 200px;
-    height: 80px;
-    margin-top: 10px;
-    border-radius: 12px;
+.toolbar{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
 }
-.conteiner{
+:root{
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+  
+#container{
     margin: 25px;
     width: 700px;
     height: 700px;
     display: grid;
     justify-content: center;
 }
-.back_cont{
+  
+.grid-item{
+    background-color: white;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+  
+img{
+    align-self: center;
+    margin-top: 20px;
+    max-width: 150px;
+    height: auto;
+}
+  
+#container-back{
     align-self: center;
     justify-self: center;
     margin:0;
-    border-radius: 20px;
-    background-color:#bfbfbf;
-    width: 1200px;
-    height: 600px;
+    border-radius: 30px;
+    background-color:#F16767;
 }
-.tools{
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 12px;
-    margin-bottom: 10px;
+  
+input{
+    max-width: 400px;
 }
-.selc{
-    background-color: #78CCCB;
-    width: 120px;
-    height: 50px;
-    padding: 5px;
-    color: white;
-    border-radius: 12px;
-    text-align: center;
-    font-size: 16px;
-}
-.colselc{
-    display: flex;
-    align-items: center;
-    padding-left: 5px;
-    padding-right: 5px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #78CCCB;
-    justify-content: center;
-}
-#colorpicker{
-    background-color: #78CCCB;
-    border: 0px;
-    border-radius: 50%;
-}
-.indent{
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 10px;
-    font-size: 20px;
-}
+  
