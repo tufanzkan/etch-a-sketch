@@ -1,56 +1,61 @@
 body{
-    background-color: rgb(251, 218, 224);
-    margin: 0px;
+  background-color: rgb(251, 218, 224);
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sketch{
-    display: flex;
-    flex-direction: row;
-    margin-top: 36px;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.5%;
+  justify-content: center;
+  gap: 20px;
 }
 .toolbar{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    background: transparent;
-    gap: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  background: transparent;
+  gap: 14px;
 }
 #eraser{
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 :root{
-    --grid-cols: 1;
-    --grid-rows: 1;
+  --grid-cols: 1;
+  --grid-rows: 1;
 }
 #container{
-    margin: 25px;
-    width: 700px;
-    height: 700px;
-    display: grid;
-    justify-content: center;
+  margin: 25px;
+  width: 700px;
+  height: 700px;
+  display: grid;
+  justify-content: center;
 }
 .grid-item{
-    background-color: white;
-    border: 1px solid #ddd;
-    text-align: center;
+  background-color: #ffff;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid black;
 }
 img{
-    align-self: center;
-    margin-top: 20px;
-    max-width: 150px;
-    height: auto;
+  align-self: center;
+  margin-top: 20px;
+  max-width: 150px;
+  height: auto;
 }
 #container-back{
-    align-self: center;
-    justify-self: center;
-    margin:0;
-    border-radius: 30px;
-    background-color:#f58a8a;
+  align-self: center;
+  justify-self: center;    
+  margin:0;
+  border-radius: 30px;
+  padding: 10px;
+  background-color:#f58a8a;
 }
 input{
-    max-width: 400px;
+  max-width: 400px;
 }
 
 
