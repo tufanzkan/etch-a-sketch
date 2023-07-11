@@ -56,6 +56,18 @@ function changeColor(e){
   }
 }
 
-let range=document.querySelector("#myRange");
-let pixel=range.value;
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.style.fontSize="26px";
+output.innerHTML = slider.value+"x"+slider.value;
+let pixel=slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value+"x"+this.value;
+  pixel = this.value;
+  deleteRows(count);
+  count=0;
+  creategrid(pixel,pixel);
+}
+
 creategrid(pixel,pixel)

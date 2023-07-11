@@ -5,27 +5,30 @@ body{
   justify-content: center;
   align-items: center;
 }
-.sketch{
-  display: flex;
-  flex-direction: row;
-  margin-top: 1.5%;
-  justify-content: center;
-  gap: 20px;
-}
 .toolbar{
   display: flex;
   flex-direction: column;
   justify-content:center;
   align-items: center;
-  background: transparent;
-  gap: 14px;
+  gap: 10px;
 }
 #eraser{
   margin-bottom: 10px;
 }
+.sketch{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 160px;
+  margin-top: 2%;
+}
 :root{
   --grid-cols: 1;
   --grid-rows: 1;
+}
+#demo,#myRange{
+  margin-top: 1px;
 }
 #container{
   margin: 25px;
@@ -35,10 +38,9 @@ body{
   justify-content: center;
 }
 .grid-item{
-  background-color: #ffff;
-  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
   text-align: center;
-  border: 1px solid black;
 }
 img{
   align-self: center;
@@ -48,11 +50,10 @@ img{
 }
 #container-back{
   align-self: center;
-  justify-self: center;    
+  justify-self: center;
   margin:0;
   border-radius: 30px;
-  padding: 10px;
-  background-color:#f58a8a;
+  background-color:#F16767;
 }
 input{
   max-width: 400px;
