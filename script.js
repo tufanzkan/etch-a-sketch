@@ -6,7 +6,7 @@ let eraser=document.querySelector('#eraser');
 let rainbow=document.querySelector('#rainbow');
 
 let count=0;
-
+console.log("directed by twofun");
 let mouseDown = false;
 container.onmousedown = () => mouseDown = true;
 container.onmouseup = () => mouseDown = false;
